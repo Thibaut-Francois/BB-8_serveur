@@ -3,7 +3,6 @@ const ip = require('ip');
  
 const PORT = process.env.PORT || 8080; // Render assigne automatiquement un port
 const server = new WebSocket.Server({ port: PORT });
-const ipadress = ip.address();
  
 console.log(`Server started on ws://${ipadress}:${PORT}`);
  
